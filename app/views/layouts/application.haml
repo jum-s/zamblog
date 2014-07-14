@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Le Zamblog
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    =image_tag("cover_sm_sm.jpg")
+    .row
+      .columns.medium-8.medium-centered
+        .columns.medium-9
+          %h1 Le Zamblog
+          %h5 Un carnet de route en Zambie
+          %br
+        .columns.medium-3
+          %br
+          %p
+            #{icon('github')} 
+            =link_to(" /jum-s", "https://www.github.com/jum-s")
+            %br
+            #{icon('twitter')} 
+            =link_to(" @jumijums", "https://www.twitter.com/jumijums")
+        .columns
+          = yield

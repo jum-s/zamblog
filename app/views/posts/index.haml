@@ -1,0 +1,22 @@
+%br
+%br
+%br
+%br
+%br
+%br
+
+-@posts.each do |post|
+  .row
+    .small-9.columns
+      %h4.heading.heading-1
+        %strong
+          = post.title
+    .small-3.columns
+      %h3.date
+        = post.created_at.strftime("%e %b")
+    .columns
+      = post.body.to_s.html_safe
+      %br
+      %br
+      %hr
+      %br
