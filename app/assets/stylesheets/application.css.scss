@@ -14,3 +14,23 @@
  *= require foundation_and_overrides
  *= require font-awesome
  */
+
+@font-face {
+  font-family: 'old_press';
+  src: font-url('old_press.ttf') format('truetype');
+}
+
+.special_font {
+    font-family: 'old_press';
+    font-size: 6em;
+    position: relative;
+    top: -2em;
+    right: 100px;
+    color: #EEE ;
+}
+
+.soustitre {
+    position: relative;
+    top: -7em;
+    right: 100px;
+}
