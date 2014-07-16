@@ -20,17 +20,32 @@
   src: font-url('old_press.ttf') format('truetype');
 }
 
+.cover {
+  height : auto;
+  width : 2000px;
+}
+
 .special_font {
-    font-family: 'old_press';
-    font-size: 6em;
-    position: relative;
-    top: -2em;
-    right: 100px;
-    color: #EEE ;
+  font-family: 'old_press';
+  font-size: 6em;
+  position: relative;
+  top: -1.7em;
+  color: #EEE ;
 }
 
 .soustitre {
-    position: relative;
-    top: -7em;
-    right: 100px;
+  position: relative;
+  top: -5em;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.83);
+}
+
+.post_box {
+  position: relative;
+  top: -5em;
+  background-color: #F5f5f5;
+  padding: 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.35);
+  box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.35);
 }

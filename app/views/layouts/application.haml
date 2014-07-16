@@ -6,20 +6,20 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    =image_tag("cover.jpg")
+    =image_tag("cover_filtered.jpg", class: "cover")
     .row
-      .columns.medium-8.medium-centered
-        .columns.medium-9
-          %h1.special_font Le Zamblog
-          %h5.soustitre Un carnet de route en Zambie
+      .columns.medium-9.medium-centered
+        .columns.small-8
+          %h1.special_font Le Zamb'log
+          %h4.soustitre Un carnet de route en Zambie
           %br
-        .columns.medium-3
+        .columns.small-4.contact_box
           %br
           %p
-            #{icon('github')} 
+            #{icon('github')} | 
             =link_to(" /jum-s", "https://www.github.com/jum-s")
             %br
-            #{icon('twitter')} 
+            #{icon('twitter')} | 
             =link_to(" @jumijums", "https://www.twitter.com/jumijums")
         .columns
           = yield
