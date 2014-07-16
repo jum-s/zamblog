@@ -49,3 +49,13 @@
   -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.35);
   box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.35);
 }
+
+footer {
+  background : #582C22;
+  color: #FAFAFA;
+  a { color: #FAFAFA };
+  a:hover { color: #DDD };
+  -webkit-box-shadow: 1px -3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    1px -3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         1px -3px 5px 0px rgba(50, 50, 50, 0.75);
+}
