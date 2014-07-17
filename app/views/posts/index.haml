@@ -11,12 +11,11 @@
       %p 
         =post.body.to_s.html_safe
       %br
-      - if post.video != nil
+      - if post.video == ""
+      - else
         %br
         .flex-video
           %iframe{src: "//www.dailymotion.com/embed/video/#{post.video}", allowfullscreen: "", frameborder: "0", height: "270",  width: "480"}
-      - else
-        %br
   %br
   %hr
   %br
