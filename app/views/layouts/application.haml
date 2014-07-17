@@ -4,6 +4,8 @@
     %title Le Zamblog
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = auto_discovery_link_tag :atom, "/feed"
+    = auto_discovery_link_tag :rss, "/feed.rss"
     = csrf_meta_tags
   %body
     =image_tag("cover_filtered.jpg", class: "cover")
@@ -21,6 +23,9 @@
             %br
             #{icon('twitter')} | 
             =link_to(" @jumijums", "https://www.twitter.com/jumijums")
+            %br
+            #{icon('rss')} | 
+            =link_to(" RSS", "/feed")
         .columns
           = yield
     %footer
@@ -39,8 +44,8 @@
             #{icon('youtube-play')} | 
             =link_to(" Jum-s", "https://www.dailymotion.com/Jum-s")
             %br
-            #{icon('skype')} | 
-            =link_to("campeon94")
+            #{icon('rss')} | 
+            =link_to(" RSS", "/feed")
         .columns.small-6
           %br
           %p
