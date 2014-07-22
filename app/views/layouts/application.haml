@@ -13,19 +13,15 @@
       .columns.medium-9.medium-centered
         .columns.small-8
           %h1.special_font Le Zamb'log
-          %h4.soustitre Un carnet de route en Zambie
           %br
-        .columns.small-4.contact_box
           %br
-          %p
-            #{icon('github')} | 
-            =link_to(" /jum-s", "https://www.github.com/jum-s")
-            %br
-            #{icon('twitter')} | 
-            =link_to(" @jumijums", "https://www.twitter.com/jumijums")
-            %br
-            #{icon('rss')} | 
-            =link_to(" RSS", "/feed")
+          %br
+          %h2.soustitre Carnet de route zambien
+        .columns.small-3.contact_box
+          %h3 
+            =link_to(icon('github')) 
+            =link_to(icon('twitter'))
+            =link_to(icon('rss'))
         .columns
           = yield
     %footer
